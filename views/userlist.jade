@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    script(type='text/javascript').
+        var apUserlist = !{JSON.stringify(userlist)};
+        console.log(apUserlist);
+    h1.
+        User List
+    ul
+        each user, i in userlist
+            li
+                a(href="mailto:#{user.email}")= user.username
+    #appobj
+    #testlist 

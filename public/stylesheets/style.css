@@ -1,0 +1,178 @@
+body {
+	background: #eee;
+}
+h1 {
+	margin: 52px 0 26px 0;
+	padding-bottom: 52px;
+}
+h2 {
+	margin: 26px 0;
+	padding-bottom: 26px;
+}
+.container {
+	background: #fff;
+	padding: 0 52px;
+	padding-bottom: 52px;
+}
+
+dl dd {
+	margin-bottom: 13px;
+}
+
+.modal-footer.row .left {
+	text-align: left;
+}
+
+/*Index Layout*/
+#index-layout-inner {
+	height: 100vh;	
+	position: relative;
+	padding-top: 78px;
+}
+#app-body {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 400px;
+}
+#userlist-col {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400px;
+	height: 100%;
+	overflow: hidden;
+	background: #f5f5f5;
+	border: 1px solid #e3e3e3;
+}
+#userdetails-col {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#userlist-col .inner,
+#userdetails-col .inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 26px 26px 26px 26px;
+}
+#userlist-col .inner {
+	padding-top: 78px;	
+}
+#userlist-col .inner h2 {
+	height: 78px;
+	width: 100%;
+	margin: 0;
+	padding: 13px 26px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#userlist-col .inner #table-of-users {
+	position: relative;
+	height: 100%;
+}
+
+/*App Header*/
+#app-header {
+ height: 78px;
+ padding: 26px;
+ background: #ddd;
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+}
+
+
+/*User Table*/
+#table-of-users {
+	padding: 13px 13px 13px 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+.user-item-name {
+	display: block;
+
+}
+
+.user-item-name button {
+	display: block;
+	position: relative;
+	float: none;
+	width: 100%;
+	text-align: left;
+	border-radius: 0;
+	padding-left: 26px;
+	padding-right: 26px;
+}
+
+.user-item-name button:focus {
+	background: #1b6d85;
+	border: solid 1px #1b6d85;
+}
+
+.user-item-name.add-user-btn button:focus {
+	background: #336e33;
+	border: solid 1px #336e33;
+}
+
+
+/*User Details*/
+#user-details-wrap {
+	position: relative;
+}
+
+#user-details-wrap .well {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+/*Animation*/
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+
+  opacity: 1;
+  -webkit-transition: opacity 0.6s ease-in;
+  transition: opacity 0.6s ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ccc; 
+    border: solid 1px #fff;
+}
+

@@ -1,6 +1,19 @@
-console.log('React App Connected! - Dooty3');
+console.log('React App Connected! - Dooty4');
 // React Transition Group
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
+
+/////////////////////////////////////////////////////////
+// 0.0 The Data Model
+/////////////////////////////////////////////////////////
+
+var dataFields = [
+{'fieldname':'value', 'type':'value'},
+{'fieldname':'value', 'type':'value'},
+{'fieldname':'value', 'type':'value'},
+{'fieldname':'value', 'type':'value'},
+{'fieldname':'value', 'type':'value'}
+];
 
 
 /////////////////////////////////////////////////////////
@@ -223,7 +236,6 @@ var UserDetails = React.createClass({
           <ReactCSSTransitionGroup transitionName="example" transitionEnterTimeout={600} transitionLeaveTimeout={200}>
           <div id="user-details-panel" className="well" key={this.props.userInfo._id}>
               <dl>
-                  // Add to obj queue
                   <dt>ID: </dt><dd>{ this.props.userInfo._id ? this.props.userInfo._id : 'No Data Available' }</dd>
                   <dt>Username: </dt><dd>{ this.props.userInfo.username ? this.props.userInfo.username : 'No Data Available' }</dd>
                   <dt>Full Name: </dt><dd>{ this.props.userInfo.fullname ? this.props.userInfo.fullname : 'No Data Available'  }</dd>
